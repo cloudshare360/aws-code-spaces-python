@@ -1,6 +1,14 @@
 {
   "name": "dev-pod-sh host",
   "image": "mcr.microsoft.com/vscode/devcontainers/universal:linux",
+  "features": {
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/devcontainers/features/azure-cli:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/terraform:1": {},
+    "ghcr.io/rapidsai/devcontainers/features/gitlab-cli:25.10.0": {}
+  },
   "hostRequirements": {
     "cpus": 4,
     "memory": "8gb"
@@ -11,7 +19,10 @@
         "ms-python.python",
         "vscjava.vscode-java-pack",
         "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "AmazonWebServices.aws-toolkit-vscode",
+        "ms-vscode.azurecli",
+        "HashiCorp.terraform"
       ]
     }
   },
